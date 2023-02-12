@@ -4,6 +4,7 @@
   "description": "Serverless aws-nodejs-typescript template",
   "main": "serverless.ts",
   "scripts": {
+    "dev": "nodemon --watch 'src/' --ext 'ts, json' --exec 'sls offline --noPrependStageInUrl'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -19,8 +20,10 @@
     "@types/node": "^14.14.25",
     "esbuild": "^0.14.11",
     "json-schema-to-ts": "^1.5.0",
+    "nodemon": "^2.0.20",
     "serverless": "^3.0.0",
     "serverless-esbuild": "^1.23.3",
+    "serverless-offline": "^12.0.4",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.1.3"
