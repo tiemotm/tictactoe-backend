@@ -1,1 +1,2 @@
-export { default as hello } from './hello';
+export { default as startGame } from './startGame';
+export { default as endGame } from './endGame';

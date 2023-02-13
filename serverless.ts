@@ -1,6 +1,7 @@
 import type { AWS } from '@serverless/typescript';
 
-import hello from '@functions/hello';
+import startGame from '@functions/startGame';
+import endGame from '@functions/endGame';
 
 const serverlessConfiguration: AWS = {
   service: 'tictactoe-backend',
@@ -19,7 +20,7 @@ const serverlessConfiguration: AWS = {
     },
   },
   // import the function via paths
-  functions: { hello },
+  functions: { startGame, endGame },
   package: { individually: true },
   custom: {
     esbuild: {
